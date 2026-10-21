@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | TeamProof</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Signup Section -->
+    <section class="signup-section">
+
+        <!-- Left Information -->
+        <div class="signup-info">
+
+            <a href="index.html" class="signup-logo">
+                <span class="signup-logo-icon">✓</span>
+                <span>Team<span>Proof</span></span>
+            </a>
+
+            <h1>
+                Start Your Journey
+                <span>With TeamProof.</span>
+            </h1>
+
+            <p>
+                Join TeamProof to organize your projects,
+                manage responsibilities, and make every
+                contribution count.
+            </p>
+
+            <div class="signup-benefits">
+
+                <div>
+                    <span>✓</span>
+                    Organize your project tasks
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Track individual contributions
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Build better teamwork
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Signup Form -->
+        <div class="signup-form-wrapper">
+
+            <div class="signup-card">
+
+                <h2>Create Your Account</h2>
+
+                <p class="signup-description">
+                    Fill in your details to get started.
+                </p>
+
+                <form id="signup-form">
+
+                    <!-- Full Name -->
+                    <div class="form-group">
+
+                        <label for="signup-name">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="signup-name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="signup-email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="signup-email"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Role -->
+                    <div class="form-group">
+
+                        <label for="signup-role">Select Your Role</label>
+
+                        <select id="signup-role" name="role" required>
+
+                            <option value="">Choose your role</option>
+                            <option value="student">Student</option>
+                            <option value="team-leader">Team Leader</option>
+                            <option value="faculty">Faculty</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="form-group">
+
+                        <label for="signup-password">Password</label>
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="signup-password"
+                                name="password"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                                minlength="8"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                data-target="signup-password"
+                                aria-label="Show password"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+                        <!-- Password Strength -->
+                        <div class="password-strength">
+
+                            <div class="strength-track">
+                                <div id="strength-bar"></div>
+                            </div>
+
+                            <p id="strength-text">
+                                Password strength
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Confirm Password -->
+                    <div class="form-group">
+
+                        <label for="confirm-password">
+                            Confirm Password
+                        </label>
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="confirm-password"
+                                name="confirmPassword"
+                                placeholder="Re-enter your password"
+                                autocomplete="new-password"
+                                minlength="8"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                data-target="confirm-password"
+                                aria-label="Show confirm password"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Validation Message -->
+                    <p
+                        id="password-message"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="signup-submit">
+                        Create Account →
+                    </button>
+
+                </form>
+
+
+                <!-- Login Link -->
+                <p class="login-link">
+                    Already have an account?
+                    <a href="login.html">Login</a>
+                </p>
+
+                <!-- Home Link -->
+                <a href="index.html" class="signup-back-home">
+                    ← Back to Home
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

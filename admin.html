@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TeamProof | Admin Dashboard</title>
+</head>
+<body>
+    <div class="admin-container">
+
+    <header class="admin-header">
+        <h1>TeamProof Admin</h1>
+        <p>Manage students, projects and contributions.</p>
+    </header>
+
+    <nav class="admin-nav">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Student Dashboard</a>
+        <a href="#students">Students</a>
+        <a href="#projects">Projects</a>
+        <a href="#tasks">Task Verification</a>
+    </nav>
+
+    <section class="admin-welcome">
+        <h2>Admin Dashboard</h2>
+        <p>Welcome! Monitor project progress and student contributions.</p>
+    </section>
+
+    <section class="admin-stats">
+
+        <div class="admin-card">
+            <h3>Total Students</h3>
+            <p id="admin-student-count">0</p>
+        </div>
+
+        <div class="admin-card">
+            <h3>Total Projects</h3>
+            <p id="admin-project-count">0</p>
+        </div>
+
+        <div class="admin-card">
+            <h3>Total Tasks</h3>
+            <p id="admin-task-count">0</p>
+        </div>
+
+        <div class="admin-card">
+            <h3>Pending Verification</h3>
+            <p id="admin-pending-count">0</p>
+        </div>
+
+    </section>
+
+    <section id="students" class="admin-section">
+    <h2>Student Management</h2>
+
+    <div class="admin-table-container">
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Student Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="students-table-body">
+                <tr>
+                    <td colspan="5">No students registered yet.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p id="admin-feedback" role="status" aria-live="polite"></p>
+</section>
+
+   <section id="projects" class="admin-section">
+    <h2>Projects Overview</h2>
+    <p>Monitor student projects and their progress.</p>
+
+    <div class="admin-table-container">
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Project Name</th>
+                    <th>Student Name</th>
+                    <th>Submission Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="projects-table-body">
+                <tr>
+                    <td colspan="5">No projects available yet.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+    <section id="tasks" class="admin-section">
+    <h2>Task Verification</h2>
+    <p>Review student submissions and verify their work.</p>
+
+    <div class="admin-table-container">
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Student Name</th>
+                    <th>Task Name</th>
+                    <th>Submission</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="verification-table-body">
+                <tr>
+                    <td colspan="6">No submissions pending verification.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+    <footer class="admin-footer">
+        <p>&copy; 2026 TeamProof | Every Contribution Counts.</p>
+    </footer>
+
+</div>
+    
+
+<link rel="stylesheet" href="style.css">
+<script src="admin.js"></script>
+</body>
+</html>

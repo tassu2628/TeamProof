@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | TeamProof</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Login Page -->
+    <section class="login-section">
+
+        <!-- Left Side -->
+        <div class="login-info">
+
+            <a href="index.html" class="login-logo">
+                <span class="login-logo-icon">✓</span>
+                <span>Team<span>Proof</span></span>
+            </a>
+
+            <h1>
+                Welcome Back to
+                <span>Better Teamwork.</span>
+            </h1>
+
+            <p>
+                Sign in to manage your projects, track tasks,
+                and keep every contribution visible.
+            </p>
+
+            <div class="login-highlight">
+                <span>✓</span>
+                Every Contribution Counts.
+            </div>
+
+        </div>
+
+
+        <!-- Right Side: Login Form -->
+        <div class="login-form-wrapper">
+
+            <div class="login-card">
+
+                <h2>Welcome Back!</h2>
+
+                <p class="login-description">
+                    Enter your details to access your account.
+                </p>
+
+                <!-- Login Form -->
+                <form id="login-form">
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="login-email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="login-email"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="form-group">
+
+                        <label for="login-password">Password</label>
+
+                        <input
+                            type="password"
+                            id="login-password"
+                            name="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Login Options -->
+                    <div class="login-options">
+
+                        <label class="remember-option">
+                            <input type="checkbox" name="remember">
+                            Remember me
+                        </label>
+
+                        <a href="forgot-password.html" id="forgot-password">
+                         Forgot Password?
+                        </a>
+U
+                    </div>
+
+
+                    <!-- Login Message -->
+                    <p id="login-message" role="status" aria-live="polite"></p>
+
+
+                    <!-- Login Button -->
+                    <button type="submit" class="login-submit">
+                        Login →
+                    </button>
+
+                </form>
+
+
+                <!-- Signup Link -->
+                <p class="signup-link">
+                    Don't have an account?
+                    <a href="signup.html">Create Account</a>
+                </p>
+
+                <!-- Back Home -->
+                <a href="index.html" class="back-home">
+                    ← Back to Home
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
